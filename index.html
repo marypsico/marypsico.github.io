@@ -25,15 +25,28 @@
 
                 <h1 class="main-header__title"><i class="fab fa-pagelines"></i>Viverdel<i class="fab fa-pagelines"></i>
                 </h1>
-                <span class="icon-menu fas fa-bars" id="btn-menu"></span>
+                <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
 
             </div>
 
             <nav class="main-nav" id="main-nav">
                 <ul class="menu">
-                    <li class="menu__item"><a href="" class="menu__link">Inicio</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">¿Quiénes somos?</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Productos</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link" onclick="changeRoute('inicio.html')">Inicio</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Acerca de</a></li>
+                    <li class="menu__item container-submenu">
+                        <a href="#" class="menu__link submenu-btn">Productos <i class="fas fa-sort-down"></i></a>
+                        <ul class="submenu">
+                            <li class="menu__item container-submenu">
+                                <a href="#" class="menu__link" onclick="changeRoute('higiene.html'); stopInterval();">Higiene</a>
+                                <!-- <ul class="submenu">
+                                    <li class="menu__item"><a href="#" class="menu__link">Rostro</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">Cabello</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">Cuerpo</a></li>
+                                </ul> -->
+                            </li>
+                            <li class="menu__item"><a href="#" class="menu__link">Productos sustentables</a></li>
+                        </ul>
+                    </li>
                     <li class="menu__item"><a href="" class="menu__link">Constacto</a></li>
                     <li class="menu__item"><a href="" class="menu__link">Blog</a></li>
 
@@ -52,167 +65,42 @@
         </div>
     </header>
 
-    <div class="container-slider">
+    <div id="content"></div>
 
-        <div class="slider" id="slider">
-
-            <div class="slider__section">
-                <img src="img/slider 5.jpg" alt="" class="slider__img">
-                <div class="slider__content">
-                    <h2 class="slider__title">Por un planeta limpio</h2>
-                    <p class="slider__txt">Productos sustentables</p>
-                    <a href="" class="slider__link">Comprar ahora</a>
-                </div>
-            </div>
-            <div class="slider__section">
-                <img src="img/slider 2.jpg" alt="" class="slider__img">
-                <div class="slider__content">
-                    <h2 class="slider__title">Por un planeta limpio</h2>
-                    <p class="slider__txt">Productos sustentables</p>
-                    <a href="" class="slider__link">Comprar ahora</a>
-                </div>
-            </div>
-            <div class="slider__section">
-                <img src="img/slider 3.jpg" alt="" class="slider__img">
-                <div class="slider__content">
-                    <h2 class="slider__title">Por un planeta limpio</h2>
-                    <p class="slider__txt">Productos sustentables</p>
-                    <a href="" class="slider__link">Comprar ahora</a>
-                </div>
-            </div>
-            <div class="slider__section">
-                <img src="img/slider 4.jpg" alt="" class="slider__img">
-                <div class="slider__content">
-                    <h2 class="slider__title">Por un planeta limpio</h2>
-                    <p class="slider__txt">Productos sustentables</p>
-                    <a href="" class="slider__link">Comprar ahora</a>
-                </div>
-
-
-            </div>
-
-
-        </div>
-        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
-        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
-    </div>
-
-    <main class="main">
-        <div class="container">
-            <h2 class="main-title">Nuevos productos</h2>
-
-            <section class="container-products">
-
-                <div class="product">
-                    <img src="img/producto 1.jpg" alt="" class="product__img">
-                    <div class="product__description">
-                        <h3 class="product__title">Kit amor propio</h3>
-                        <span class="product__price">$269.00</span>
-                    </div>
-                    <i class="product__icon fas fa-cart-plus"></i>
-                </div>
-                <div class="product">
-                    <img src="img/producto 2.jpg" alt="" class="product__img">
-                    <div class="product__description">
-                        <h3 class="product__title">Kit de afeitado para caballero</h3>
-                        <span class="product__price">$169.00</span>
-                    </div>
-                    <i class="product__icon fas fa-cart-plus"></i>
-                </div>
-                <div class="product">
-                    <img src="img/producto 3.jpg" alt="" class="product__img">
-                    <div class="product__description">
-                        <h3 class="product__title">Tabletas de higiene dental</h3>
-                        <span class="product__price">$149.00</span>
-                    </div>
-                    <i class="product__icon fas fa-cart-plus"></i>
-                </div>
-                <div class="product">
-                    <img src="img/peroducto 4.jpg" alt="" class="product__img">
-                    <div class="product__description">
-                        <h3 class="product__title">Desodorante sólido</h3>
-                        <span class="product__price">$70.00</span>
-                    </div>
-                    <div>
-                        <i class="product__icon fas fa-cart-plus"></i>
-                    </div>
-                </div>
-
-            </section>
-        </div>
-
-
-
-
-        <div class="container-slider">
-
-            <div class="slider" id="slider-post">
-
-                <div class="slider__section-post">
-                    <div class="fb-post" data-href="https://www.facebook.com/FlouPiineckz/posts/3233624456660734"
-                        data-width="" data-show-text="true">
-                        <blockquote cite="https://www.facebook.com/FlouPiineckz/posts/3233624456660734"
-                            class="fb-xfbml-parse-ignore">
-                            <p>Los productos son de excelente calidad, huelen riquísimo.
-                                Además la atención que brindan es personalizada y muy...</p>Publicado por <a href="#"
-                                role="button">Flor M PM</a> en&nbsp;<a
-                                href="https://www.facebook.com/FlouPiineckz/posts/3233624456660734">Viernes, 12 de
-                                junio de 2020</a>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="slider__section-post">
-                    <div class="fb-post" data-href="https://www.facebook.com/liz.misterio/posts/10157977878963105"
-                        data-width="" data-show-text="true">
-                        <blockquote cite="https://www.facebook.com/liz.misterio/posts/10157977878963105"
-                            class="fb-xfbml-parse-ignore">
-                            <p>Me encantaron sus productos, el desodorante es una maravilla, no falla, y la barrita
-                                dura un montón,
-                                ya tengo dos meses...</p>Publicado por <a
-                                href="https://www.facebook.com/liz.misterio">Liz
-                                Misterio</a> en&nbsp;<a
-                                href="https://www.facebook.com/liz.misterio/posts/10157977878963105">Jueves,
-                                4 de febrero de 2021</a>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="slider__section-post">
-                    <div class="fb-post" data-href="https://www.facebook.com/liz.misterio/posts/10157977878963105"
-                        data-width="" data-show-text="true">
-                        <blockquote cite="https://www.facebook.com/liz.misterio/posts/10157977878963105"
-                            class="fb-xfbml-parse-ignore">
-                            <p>Me encantaron sus productos, el desodorante es una maravilla, no falla, y la barrita
-                                dura un montón,
-                                ya tengo dos meses...</p>Publicado por <a
-                                href="https://www.facebook.com/liz.misterio">Liz
-                                Misterio</a> en&nbsp;<a
-                                href="https://www.facebook.com/liz.misterio/posts/10157977878963105">Jueves,
-                                4 de febrero de 2021</a>
-                        </blockquote>
-                    </div>
-                </div>
-
-            </div>
-            <div class="slider__btn slider__btn--right" id="btn-right-post">&#62;</div>
-            <div class="slider__btn slider__btn--left" id="btn-left-post">&#60;</div>
-        </div>
-
-        <div class="container-editor">
-            <div class="editor__item">
-                <img src="img/productUso 2.jpeg" alt="" class="editor__img">
-                <p class="editor__circle">Consumo <br> consciente</p>
-            </div>
-            <div class="editor__item">
-                <img src="img/productUso 3.jpeg" alt="" class="editor__img">
-                <p class="editor__circle">Consumo <br> consciente</p>
+    <footer class="main-footer">
+        <div class="footer__section">
+            <h2 class="footer__title">Formas de pago</h2>
+            <div class="footer__txt"> <i class="fab fa-cc-paypal"></i> Pay Pal <br><br> <i
+                    class="far fa-credit-card"></i> Clip <br><br> <i class="fab fa-cc-visa"></i> Transferencia bancaria
+                <br><br> <i class="far fa-credit-card"></i> Mercado Pago
             </div>
         </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Redes sociales</h2>
+            <div class="footer__txt">
 
-    </main>
+                <a class="footer__txt-link" href="https://www.facebook.com/viverdel"><i
+                        class="fab fa-facebook"></i>Viverdel</a>
 
 
-    <script src="js/slider.js"></script>
-    <script src="js/sliderPost.js"></script>
+                <br>
+                <a class="footer__txt-link"
+                    href="https://www.instagram.com/viverdel/?fbclid=IwAR1JxYf9e1YO4sH-DB0_aPJX-c9CR2rx-EgN3xZaI5WzWjdMvLmbETrPU8A"><i
+                        class="fab fa-instagram"></i> Viverdel</a>
+
+
+            </div>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Contacto</h2>
+            <div class="footer__txt"> <i class="fab fa-whatsapp"></i>55 6290 5451 <br> <i class="far fa-envelope"></i>
+                viverdelmx@gmail.com</div>
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v10.0"
         nonce="qlE4Fhor"></script>
 </body>

@@ -105,7 +105,7 @@
   
 /*Slider Post*/
 
-.slider-post {
+#slider-post {
     display: flex;
     width: 300%;
     height: 300px;
@@ -115,5 +115,46 @@
   
 .slider__section-post {
     width:100%;
-    position:relative;
+    position: absolute;
+}
+
+
+/*Estilos para tablet*/
+
+@media screen and (min-width:768px) {
+    .slider {
+        height: 400px;
+    }
+    .slider__title {
+        font-size: 2em;
+    }
+    .slider__txt {
+        font-size: 1.4em;
+    }
+    .slider__link {
+        font-size: 1.1em;
+        color: #fff;
+        letter-spacing: 1px;
+        width: 133px;
+}
+
+/*Estilos para web*/
+
+@media screen and (min-width:1024px) {
+    .slider {
+        height: 470px;
+    }
+    .slider__title {
+        font-size: 2.5em;
+    }
+    .slider__txt {
+        font-size: 1.8em;
+    }
+    .slider__link {
+        font-size: 1.3em;
+        color: #fff;
+        letter-spacing: 1px;
+        width: 154px;
+}
+
 }
