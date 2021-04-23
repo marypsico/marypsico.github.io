@@ -1,29 +1,20 @@
 let content = document.getElementById("content");
-let scriptSlider = document.createElement('script');
-let scriptSliderPost = document.createElement('script');
-
-scriptSlider.src = 'js/slider.js';
-scriptSliderPost.src = 'js/sliderPost.js';
 
 function changeRoute(route) {
-    //(window.event).preventDefault();
+
     content.innerHTML = '';
-    
 
     fetch("/pages/" + route)
         .then((response) => response.text())
-        .then((html) => {
-
-            content.innerHTML = html;
-
+        .then((html) = content.innerHTML = html)
+        .then(() => {
             if (route == "inicio.html") {
-
-                document.body.appendChild(scriptSlider);
-                document.body.appendChild(scriptSliderPost);
+                initSlider();
+                initSliderPost();
             }
             else {
-                document.body.removeChild(scriptSlider);
-                document.body.removeChild(scriptSliderPost);
+                clearSlider();
+                clearSliderPost();
             }
         })
         .catch((error) => {

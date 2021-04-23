@@ -1,11 +1,33 @@
-const sliderPost = document.getElementById("slider-post");
-let sliderSectionPost = document.getElementsByClassName("slider__section-post");
-let sliderSectionLastPost = sliderSectionPost[sliderSectionPost.length - 1];
+let sliderPost;
+let sliderSectionPost;
+let sliderSectionLastPost;
 
-const btnLeftPost = document.getElementById("btn-left-post");
-const btnRightPost = document.getElementById("btn-right-post");
+let btnLeftPost;
+let btnRightPost;
 
-sliderPost.insertAdjacentElement('afterbegin', sliderSectionLastPost);
+let intervalPost = 0;
+
+function initSliderPost() {
+    sliderPost = document.getElementById("slider-post");
+    sliderSectionPost = document.getElementsByClassName("slider__section-post");
+    sliderSectionLastPost = sliderSectionPost[sliderSectionPost.length - 1];
+    btnLeftPost = document.getElementById("btn-left-post").addEventListener('click', function () {
+        prevPost();
+    });
+    btnRightPost = document.getElementById("btn-right-post").addEventListener('click', function () {
+        nextPost();
+    });
+    //sliderPost.insertAdjacentElement('afterbegin', sliderSectionLastPost);
+}
+
+function clearSliderPost() {
+    sliderPost = null;
+    sliderSectionPost = null;
+    sliderSectionLastPost = null;
+    btnLeftPost = null;
+    btnRightPost = null;
+    stopIntervalPost();
+}
 
 function nextPost() {
     let sliderSectionFirst = document.getElementsByClassName("slider__section-post")[0];
@@ -30,8 +52,6 @@ function prevPost() {
     }, 500);
 }
 
-let intervalPost = 0;
-
 function startIntervalPost() {
     if (intervalPost < 1)
         intervalPost = setInterval(function () {
@@ -44,15 +64,3 @@ function stopIntervalPost() {
         clearInterval(intervalPost);
     intervalPost = 0;
 }
-
-//startIntervalPost();
-
-btnRightPost.addEventListener('click', function () {
-    nextPost();
-    //startIntervalPost();
-});
-
-btnLeftPost.addEventListener('click', function () {
-    prevPost();
-    //stopIntervalPost();
-});

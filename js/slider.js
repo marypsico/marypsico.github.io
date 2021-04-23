@@ -1,13 +1,42 @@
-const slider = document.querySelector("#slider");
-let sliderSection = document.querySelectorAll(".slider__section");
-let sliderSectionLast = sliderSection[sliderSection.length - 1];
+let slider;
+let sliderSection;
+let sliderSectionLast;
 
-const btnLeft = document.querySelector("#btn-left");
-const btnRight = document.querySelector("#btn-right");
+let btnLeft;
+let btnRight;
 
-slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+let interval = 0;
+
+function initSlider() {
+    console.log("SCRIPT")
+    slider = document.querySelector("#slider");
+    sliderSection = document.querySelectorAll(".slider__section");
+    sliderSectionLast = sliderSection[sliderSection.length - 1];
+    btnLeft = document.querySelector("#btn-left").addEventListener('click', function () {
+        prev();
+        stopInterval();
+    });
+    btnRight = document.querySelector("#btn-right").addEventListener('click', function () {
+        next();
+        startInterval();
+    });
+    //slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+
+    startInterval();
+}
+
+function clearSlider() {
+    console.log("CLEAR")
+    stopInterval();
+    slider = null;
+    sliderSection = null;
+    sliderSectionLast = null;
+    btnLeft = null;
+    btnRight = null;
+}
 
 function next() {
+    console.log("NEXT");
     let sliderSectionFirst = document.querySelectorAll(".slider__section")[0];
     slider.style.marginLeft = "-200%";
     slider.style.transition = "all 0.5s";
@@ -19,6 +48,7 @@ function next() {
 }
 
 function prev() {
+    console.log("PREV");
     let sliderSection = document.querySelectorAll(".slider__section");
     let sliderSectionLast = sliderSection[sliderSection.length - 1];
     slider.style.marginLeft = "0";
@@ -30,13 +60,12 @@ function prev() {
     }, 500);
 }
 
-let interval = 0;
-
 function startInterval() {
     if (interval < 1)
         interval = setInterval(function () {
             next();
         }, 4000);
+    console.log("INTERVAL", interval);
 }
 
 function stopInterval() {
@@ -44,17 +73,5 @@ function stopInterval() {
         clearInterval(interval);
     interval = 0;
 }
-
-startInterval();
-
-btnRight.addEventListener('click', function () {
-    next();
-    startInterval();
-});
-
-btnLeft.addEventListener('click', function () {
-    prev();
-    stopInterval();
-});
 
 

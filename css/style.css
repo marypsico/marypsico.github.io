@@ -106,7 +106,7 @@ img {
     position: relative;
     display: block;
     transition: all 0.9s;
-    outline:none
+    outline:none;
 }
 
 .menu__link:hover {
