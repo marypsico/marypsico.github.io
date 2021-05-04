@@ -8,7 +8,6 @@ let btnRight;
 let interval = 0;
 
 function initSlider() {
-    console.log("SCRIPT")
     slider = document.querySelector("#slider");
     sliderSection = document.querySelectorAll(".slider__section");
     sliderSectionLast = sliderSection[sliderSection.length - 1];
@@ -26,7 +25,6 @@ function initSlider() {
 }
 
 function clearSlider() {
-    console.log("CLEAR")
     stopInterval();
     slider = null;
     sliderSection = null;
@@ -36,7 +34,6 @@ function clearSlider() {
 }
 
 function next() {
-    console.log("NEXT");
     let sliderSectionFirst = document.querySelectorAll(".slider__section")[0];
     slider.style.marginLeft = "-200%";
     slider.style.transition = "all 0.5s";
@@ -48,7 +45,6 @@ function next() {
 }
 
 function prev() {
-    console.log("PREV");
     let sliderSection = document.querySelectorAll(".slider__section");
     let sliderSectionLast = sliderSection[sliderSection.length - 1];
     slider.style.marginLeft = "0";
@@ -65,7 +61,6 @@ function startInterval() {
         interval = setInterval(function () {
             next();
         }, 4000);
-    console.log("INTERVAL", interval);
 }
 
 function stopInterval() {

@@ -1,0 +1,42 @@
+.container-products {
+    display: block;
+}
+
+.products__title {
+    text-align: center;
+}
+
+.products {
+    margin: 10px;
+}
+
+.link__products {
+    position: relative;
+    display: flex;
+}
+
+.products__img {
+    height: 280px;
+    object-fit: cover;
+    position:relative; 
+}
+
+.products_content_xyz {
+    display: block;
+    position:relative; 
+} 
+
+
+
+.product__titles {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+    
+    /*top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);*/
+   
+}

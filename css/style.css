@@ -1,5 +1,4 @@
-* {
-    font-family: 'Indie Flower', cursive;
+*, *::before, *::after{ 
     box-sizing: border-box;
 }
 
@@ -22,7 +21,7 @@ img {
     font-family: 'Yesteryear', cursive;
     text-align: center;
     font-size: 3em;
-    margin: 5px 0 10px 0;
+    margin: auto;
     background: -webkit-linear-gradient(#996, #000);
     -webkit-background-clip: text;
     background-clip: text;
@@ -408,7 +407,8 @@ img {
         font-weight: bold;
         letter-spacing: 1px;
     }
-
+    
+    /*Products*/
     .container-products {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -423,6 +423,7 @@ img {
     .product__img {
         width: 100%;
         height: 250px;
+        object-fit: cover;
     }
 
     .product__title {
