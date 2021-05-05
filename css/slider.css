@@ -1,10 +1,17 @@
-* {
+*, *::before, *::after{ 
     box-sizing: border-box;
+}
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
 }
 
 .container-slider {
-    margin: 50px 0;
+    margin: 5rem 0;
     position: relative;
     overflow: hidden;
 
@@ -13,7 +20,7 @@
 .slider {
     display: flex;
     width: 400%;
-    height: 250px;
+    height: 25rem;
     margin-left: -100%;
     position: relative;
 
@@ -45,7 +52,7 @@
 }
 
 .slider__title {
-    font-size: 1.5em;
+    font-size: 4rem;
     margin: 0;
     font-weight: bold;
     color: #fff;
@@ -54,24 +61,24 @@
 }
 
 .slider__txt {
-    margin: 5px 0;
-    font-size: 1em;
+    margin: .5rem 0;
+    font-size: 2.5rem;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
     text-shadow: 2px 2px 8px #000, 2px 2px 8px #000, 2px 2px 8px #000;
 }
 
 .slider__link {
     display: block;
-    border: 1px solid #990;
-    padding: 2px 0;
+    border: .1rem solid #990;
+    padding: .2rem 0;
     text-align: center;
     text-decoration: none;
-    font-size: .9em;
+    font-size: .9rem;
     color: #fff;
-    letter-spacing: 1px;
-    width: 115px;
-    margin: 20px auto;
+    letter-spacing: .1rem;
+    width: 11.5rem;
+    margin: 2rem auto;
     background-color: rgb(3, 3, 3, 0.5);
 
 }
@@ -83,11 +90,11 @@
 
 .slider__btn {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 25PX;
+    font-size: 3.5rem;
     font-weight: bold;
     font-family: monospace;
     text-align: center;
@@ -97,11 +104,11 @@
 }
 
 .slider__btn--left {
-    left: 10px;
+    left: 1rem;
 }
 
 .slider__btn--right {
-    right: 10px;
+    right: 1rem;
 }
 
 /*slaiderpost*/
@@ -121,18 +128,18 @@
 .slider__section-post {
     width: 100%;
     position: relative;
-    padding: 25px;
+    padding: 2.5rem;
 }
 
 .slider__btn--left-post {
-    left: 2px;
-    font-size: 20px;
+    left: .2rem;
+    font-size: 2rem;
      
 }
 
 .slider__btn--right-post {
-    right: 2px;  
-    font-size: 20px;
+    right: .2rem;  
+    font-size: 2rem;
 }
 
 
@@ -141,39 +148,41 @@
 
 @media screen and (min-width:768px) {
     .slider {
-        height: 400px;
+        height: 40rem;
     }
 
     .slider__title {
-        font-size: 2em;
+        font-size: 6rem;
     }
 
     .slider__txt {
-        font-size: 1.4em;
+        font-size: 4rem;
     }
 
     .slider__link {
-        font-size: 1.1em;
+        font-size: 2rem;
         color: #fff;
-        letter-spacing: 1px;
-        width: 133px;
+        font-weight: bold;
+        letter-spacing: .1rem;
+        width: 14.8rem;
+        padding:.3rem;
     }
 
     .slider__section-post {
         width: 100%;
-        padding: 0 200px;
+        padding: 0 20rem;
         position: relative
     }
 
     .slider__btn--left-post {
         position: absolute;
-        left: 10px;
-        font-size: 50px;
+        left: 1rem;
+        font-size: 5rem;
     }
 
     .slider__btn--right-post {
         position: absolute;
-        font-size: 50px;
+        font-size: 5rem;
     }
 }
 
@@ -181,44 +190,44 @@
 
 @media screen and (min-width:1024px) {
     .slider__title {
-        font-size: 2.5em;
+        font-size: 6rem;
     }
 
     .slider__txt {
-        font-size: 1.8em;
+        font-size: 3remem;
     }
 
     .slider__link {
-        font-size: 1.3em;
+        font-size: 2.3rem;
         color: #fff;
-        letter-spacing: 1px;
-        width: 154px;
+        letter-spacing: .1rem;
+        width: 18rem;
     }
 
     /*Slider Post*/
     .container-slider{
-        margin-top: 120px;
+        margin-top: 12rem;
     }
     .slider__section-post {
         width: 100%;
-        margin: 15px 100px 20px 100px;
+        margin: 1.5rem 10rem 2rem 10rem;
         position: relative
         
     }
 
     .slider__img-post {
-        margin-top: 50px;
+        margin-top: 5rem;
     }
 
     .slider__btn--left-post {
-        top: 400px;
-        left: 120px;
-        font-size: 50px;
+        top: 40rem;
+        left: 12rem;
+        font-size: 5rem;
     }
 
     .slider__btn--right-post {
-        top: 400px;
-        right: 120px;
-        font-size: 50px;
+        top: 40rem;
+        right: 12rem;
+        font-size: 5rem;
     }
 }
