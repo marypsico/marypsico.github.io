@@ -4,39 +4,87 @@
 
 .products__title {
     text-align: center;
+    color: #633;
+    font-weight: bold;
+    font-size: 35px;
 }
 
 .products {
     margin: 10px;
 }
 
-.link__products {
-    position: relative;
-    display: flex;
-}
-
 .products__img {
-    height: 280px;
+    height: 315px;
     object-fit: cover;
-    position:relative; 
 }
 
-.products_content_xyz {
-    display: block;
-    position:relative; 
-} 
 
-
-
+.products__link {
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .product__titles {
+    width:80%;
     position: absolute;
-    left: 0;
-    top: 0;
-    margin: auto;
-    
-    /*top: 50%;
-    left: 50%;
+    text-align: center;
     color: #fff;
-    transform: translate(-50%, -50%);*/
+    font-size: 27px;
+    text-shadow: 2px 2px 8px #990, 2px 2px 8px #990, 2px 2px 8px #990, 2px 2px 8px #990, 2px 2px 8px #990, 2px 2px 8px #990;
+    /* z-index: 100; */
    
+}
+
+/*Estilos para tablet*/
+
+@media screen and (min-width:768px) {
+    .products__title{
+        font-size: 39px;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap:15px;
+    }
+    .products__img {
+        height: 300px;
+    }
+
+    .product__titles{
+        font-size: 25px;
+        font-weight: bold;
+
+    }
+
+}
+
+/*Estilos para web*/
+@media screen and (min-width:1024px) {
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap:15px;
+    }
+
+    .products__title{
+        font-size: 45px;
+    }
+    .products__img {
+        height: 500px;
+    }
+
+    .product__titles{
+        font-size: 48px;
+        font-weight: bold;
+
+    }
+
 }

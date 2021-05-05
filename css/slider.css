@@ -173,17 +173,13 @@
 
     .slider__btn--right-post {
         position: absolute;
-        font-size: 10px;
+        font-size: 50px;
     }
 }
 
 /*Estilos para web*/
 
 @media screen and (min-width:1024px) {
-    .slider {
-        height: 470px;
-    }
-
     .slider__title {
         font-size: 2.5em;
     }
@@ -200,10 +196,18 @@
     }
 
     /*Slider Post*/
+    .container-slider{
+        margin-top: 120px;
+    }
     .slider__section-post {
         width: 100%;
-        margin: 0 100px;
+        margin: 15px 100px 20px 100px;
         position: relative
+        
+    }
+
+    .slider__img-post {
+        margin-top: 50px;
     }
 
     .slider__btn--left-post {
