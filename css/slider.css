@@ -56,7 +56,7 @@ body {
     margin: 0;
     font-weight: bold;
     color: #fff;
-    text-shadow: 2px 2px 8px #000, 2px 2px 8px #000, 2px 2px 8px #000, 2px 2px 8px #000, 2px 2px 8px #000;
+    text-shadow: .2rem .2rem .8rem #000, .2rem .2rem .8rem #000, .2rem .2rem .8rem #000, .2rem .2rem .8rem #000, .2rem .2rem .8rem #000;
 
 }
 
@@ -65,7 +65,7 @@ body {
     font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: .1rem;
-    text-shadow: 2px 2px 8px #000, 2px 2px 8px #000, 2px 2px 8px #000;
+    text-shadow:  .2rem .2rem .8rem #000, .2rem .2rem .8rem #000, .2rem .2rem .8rem #000;
 }
 
 .slider__link {
@@ -189,12 +189,16 @@ body {
 /*Estilos para web*/
 
 @media screen and (min-width:1024px) {
+    .slider {
+        height: 43rem;
+    }
+    
     .slider__title {
         font-size: 6rem;
     }
 
     .slider__txt {
-        font-size: 3remem;
+        font-size: 3rem;
     }
 
     .slider__link {
