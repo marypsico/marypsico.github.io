@@ -52,10 +52,11 @@ body {
 }
 
 .slider__title {
-    font-size: 4rem;
+    font-size: 4.4rem;
     margin: 0;
     font-weight: bold;
     color: #fff;
+    font-family: 'Dancing Script', cursive;
     text-shadow: .2rem .2rem .8rem #000, .2rem .2rem .8rem #000, .2rem .2rem .8rem #000, .2rem .2rem .8rem #000, .2rem .2rem .8rem #000;
 
 }
@@ -74,7 +75,7 @@ body {
     padding: .2rem 0;
     text-align: center;
     text-decoration: none;
-    font-size: .9rem;
+    font-size: 1.4rem;
     color: #fff;
     letter-spacing: .1rem;
     width: 11.5rem;

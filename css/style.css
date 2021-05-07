@@ -13,7 +13,6 @@ body {
 body {
     margin: 0;
     font-family: 'Indie Flower', cursive;
-
 }
 /*Estilos header*/
 header {
@@ -110,12 +109,13 @@ img {
 .menu__link {
     color: #633;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.4rem;
     text-decoration: none;
     position: relative;
     display: block;
     transition: all 0.9s;
     outline:none;
+    font-family: 'Dancing Script', cursive;
 }
 
 .menu__link:hover {
@@ -154,11 +154,13 @@ img {
     grid-gap: 1.5rem;
 }
 .main-title{
+    margin: 6rem;
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 3.7rem;
     text-align: center;
     margin-bottom: 1.5rem;
     color: #633;
+    font-family: 'Dancing Script', cursive;
 }
 .product-new {
     border: 1px solid #990;
@@ -177,6 +179,8 @@ img {
     position: absolute;
     top: .5rem;
     right: .7rem;
+    /* font-family: 'Dancing Script', cursive; */
+    font-size: 2rem;
 }
 
 .new-product__img {
@@ -279,7 +283,8 @@ img {
 .footer__title {
     font-size: 3.5rem;
     text-align: center;
-    color:  #633;;
+    color:  #633;
+    font-family: 'Dancing Script', cursive;
 }
 
 .footer__txt {

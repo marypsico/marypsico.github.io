@@ -8,7 +8,6 @@ function changeRoute(route) {
         .then((response) => response.text())
         .then((html) => content.innerHTML = html)
         .then(() => {
-            toggleMenu();
             if (route == "inicio.html") {
                 initSlider();
                 initSliderPost();
