@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["yTV0xAS"]); }
+
+__d("XCometPageVanityManageJobsControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f){a=b("jsRouteBuilder")("/{vanity}/manage_jobs/",Object.freeze({ref:"",show_unread_only:!1}),void 0);c=a;e.exports=c}),null);

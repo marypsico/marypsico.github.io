@@ -1,0 +1,12 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["uEE1Tf9"]); }
+
+__d("XCometMarketplaceYouSubmittedOffersControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f){a=b("jsRouteBuilder")("/marketplace/you/submitted_offers/{?order_id}/",Object.freeze({}),void 0);c=a;e.exports=c}),null);
+__d("XCometMarketplaceYouShippingOrdersControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f){a=b("jsRouteBuilder")("/marketplace/you/shipping_orders/{?order_id}/",Object.freeze({}),void 0);c=a;e.exports=c}),null);
+__d("XCometMarketplaceYouOrdersControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f){a=b("jsRouteBuilder")("/marketplace/you/orders/",Object.freeze({is_from_contact_form:!1}),void 0);c=a;e.exports=c}),null);
+__d("XCometMarketplaceYouPromotionsControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f){a=b("jsRouteBuilder")("/marketplace/you/promotions/{?discount_id}/",Object.freeze({}),void 0);c=a;e.exports=c}),null);
+__d("XCometMarketplaceComposerBulkUploadControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f){a=b("jsRouteBuilder")("/marketplace/create/bulk/",Object.freeze({}),void 0);c=a;e.exports=c}),null);
+__d("XCometPageShopsControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f){a=b("jsRouteBuilder")("/{vanity}/shop/",Object.freeze({ref:"",preview:!1}),void 0);c=a;e.exports=c}),null);
+__d("XCometMarketplaceLiveShoppingControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f){a=b("jsRouteBuilder")("/marketplace/live-shopping/",Object.freeze({}),void 0);c=a;e.exports=c}),null);
+__d("XCometMarketplaceYouSalesControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f){a=b("jsRouteBuilder")("/marketplace/you/sales/",Object.freeze({}),void 0);c=a;e.exports=c}),null);
+__d("XCometMarketplaceInboxControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f){a=b("jsRouteBuilder")("/marketplace/inbox/",Object.freeze({}),void 0);c=a;e.exports=c}),null);
+__d("XCometMarketplaceCartControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f){a=b("jsRouteBuilder")("/marketplace/cart/",Object.freeze({}),void 0);c=a;e.exports=c}),null);

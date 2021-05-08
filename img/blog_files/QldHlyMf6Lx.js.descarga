@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["rig2Ses"]); }
+
+__d("GroupsCometCompanionGroupEducationDialogQuery$Parameters",[],(function(a,b,c,d,e,f){"use strict";a={kind:"PreloadableConcreteRequest",params:{id:"3774387176023808",metadata:{},name:"GroupsCometCompanionGroupEducationDialogQuery",operationKind:"query",text:null}};e.exports=a}),null);
+__d("GroupsCometCompanionGroupEducationDialog.entrypoint",["GroupsCometCompanionGroupEducationDialogQuery$Parameters","JSResourceForInteraction"],(function(a,b,c,d,e,f){"use strict";a={getPreloadProps:function(a){return{extraProps:{},queries:{dialogQueryReference:{parameters:b("GroupsCometCompanionGroupEducationDialogQuery$Parameters"),variables:{pageID:a.routeProps.pageID}}}}},root:b("JSResourceForInteraction")("GroupsCometCompanionGroupEducationDialog.react").__setRef("GroupsCometCompanionGroupEducationDialog.entrypoint")};e.exports=a}),null);

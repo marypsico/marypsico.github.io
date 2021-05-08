@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["y5xSw\/A"]); }
+
+__d("XCommerceManagerMiniShopControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f){a=b("jsRouteBuilder")("/commerce_manager/{account_id}/shops/{id}/",Object.freeze({preview_live:!1,first_run:!1}),void 0);c=a;e.exports=c}),null);

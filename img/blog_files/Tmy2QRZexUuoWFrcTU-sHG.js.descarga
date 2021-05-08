@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["yk3dVZR"]); }
+
+__d("XCometPageMenuTabControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f){a=b("jsRouteBuilder")("/{vanity}/menu/{?list_id}/",Object.freeze({ref:""}),void 0);c=a;e.exports=c}),null);
+__d("XCometMenuEditControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f){a=b("jsRouteBuilder")("/{vanity}/menu/edit/",Object.freeze({ref:""}),void 0);c=a;e.exports=c}),null);

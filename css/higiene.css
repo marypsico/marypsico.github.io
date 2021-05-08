@@ -19,8 +19,9 @@ body {
     text-align: center;
     color: #633;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 3.5rem;
     font-family: 'Dancing Script', cursive;
+    margin: 3rem 0;
 }
 
 .products {

@@ -1,0 +1,37 @@
+*, *::before, *::after{ 
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+}
+
+.container-blog{
+    display: block;
+    /* margin-right: 1rem; */
+}
+
+.blog__title{
+    text-align: center;
+    color: #633;
+    font-weight: bold;
+    font-size: 3.5rem;
+    font-family: 'Dancing Script', cursive;
+    margin: 3rem 0;
+}
+
+.blog{
+    margin: 1rem;
+}
+.blog__post{
+    border: .1rem solid #990;
+}
+.blog__title-post{
+    text-align:center;
+    margin: 2rem;
+    color: #990;
+}

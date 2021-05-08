@@ -1,0 +1,6 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["BqLXXGR"]); }
+
+__d("StoriesArchiveBucketDataContext",["emptyFunction","react"],(function(a,b,c,d,e,f){"use strict";var g;a=g||b("react");c={archiveBucketData:{lowerBoundTime:"",nextDay:"",previousDay:"",storyArchiveID:"story_archive_ID",upperBoundTime:""},initialBucketID:"",setArchiveBucketData:b("emptyFunction")};d=a.createContext(c);e.exports=d}),null);
+__d("StoriesArchiveCardStoreForBlue",[],(function(a,b,c,d,e,f){"use strict";a={DeletedStoryList:new Set(),SeenStoryList:new Set(),StoriesArchiveDataMap:new Map()};e.exports=a}),null);
+__d("StoriesArchiveConstants",[],(function(a,b,c,d,e,f){"use strict";a={CONNECTION_NAME:"StoriesArchiveContentPaneRoot_archived_cards"};f.ARCHIVE=a;b={INITIAL_NEXTDAY:"initial_next_day",INITIAL_PREVIOUSDAY:"initial_previous_day"};f.BucketData=b}),null);
+__d("FBStoriesQPLUtils",["QuickPerformanceLogger","Run"],(function(a,b,c,d,e,f){"use strict";f.start=a;f.end=c;function g(a){a.navigationStart?b("QuickPerformanceLogger").markerStartFromNavStart(a.qplMarker):b("QuickPerformanceLogger").markerStart(a.qplMarker,0),b("Run").onUnload(function(){b("QuickPerformanceLogger").markerEnd(a.qplMarker,4)})}function a(a){g(a)}function c(a){b("QuickPerformanceLogger").markerEnd(a.qplMarker,a.action?a.action:2)}}),null);

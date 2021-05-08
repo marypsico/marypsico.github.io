@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["8DVN1\/7"]); }
+
+__d("XMediaManagerControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f){a=b("jsRouteBuilder")("/creatorstudio/{?*tab_route}/",Object.freeze({override_mweb_check:!1,open_bulk_upload_panel:!1,mta_onboarding_includes_brand_collabs:!1,mta_onboarding_deferred_payout:!1,open_videolist_creation_dialogue:!1,open_basic_post_composer:!1,open_igtv_uploader:!1,open_boost_post_dialog:!1,open_promo_dialog:!1,show_live_break_custom_video_tray:!1}),void 0);c=a;e.exports=c}),null);

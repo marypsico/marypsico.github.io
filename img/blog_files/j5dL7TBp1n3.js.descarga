@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["+sCIVIp"]); }
+
+__d("XCometPhotoControllerRouteBuilder",["jsRouteBuilder"],(function(a,b,c,d,e,f){a=b("jsRouteBuilder")("/photo/",Object.freeze({}),void 0);c=a;e.exports=c}),null);

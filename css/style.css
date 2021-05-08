@@ -154,7 +154,7 @@ img {
     grid-gap: 1.5rem;
 }
 .main-title{
-    margin: 6rem;
+    margin: 4rem;
     font-weight: bold;
     font-size: 3.7rem;
     text-align: center;
@@ -312,7 +312,7 @@ img {
     }
 
     .main-header__title {
-        font-size: 6rem;
+        font-size: 8rem;
         text-align: center;
         margin: auto;
     }
@@ -326,6 +326,9 @@ img {
         
     }
 
+    
+/*New products*/
+
     .container-new-products {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -333,11 +336,9 @@ img {
     }
 
     .main-title{
-        font-size: 3.9rem;
+        font-size: 4.6rem;
         color: #633;
     }
-
-    /*New products*/
 
     .new-product {
         height: 30rem;
@@ -389,7 +390,7 @@ img {
     }
 
     .footer__title{
-        font-size: 2.7rem;
+        font-size: 3.5rem;
     }
 
     .footer__txt{
@@ -405,7 +406,7 @@ img {
     /*Estilos header*/
 
     .main-header__title {
-        font-size: 12rem;
+        font-size: 14rem;
         text-align: center;
         margin: auto;
     }
@@ -456,7 +457,7 @@ img {
     }
 
     .menu__link {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     .container-submenu {
@@ -487,7 +488,7 @@ img {
     }
 
     .main-title{
-        font-size: 4.5rem;
+        font-size: 6.5rem;
         color: #633;
     }
 
@@ -542,6 +543,8 @@ img {
         font-weight: bold;
     }
 
+    /*footer web*/
+
     .main-footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -550,7 +553,7 @@ img {
     }
 
     .footer__title{
-        font-size: 3rem;
+        font-size: 4.5rem;
     }
 
     .footer__txt{
