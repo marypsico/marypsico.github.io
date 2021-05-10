@@ -103,7 +103,8 @@ img {
     text-align: center;
     margin: auto;
     width: 100%;
-    outline:none
+    outline:none;
+   
 }
 
 .menu__link {
@@ -116,6 +117,7 @@ img {
     transition: all 0.9s;
     outline:none;
     font-family: 'Dancing Script', cursive;
+    
 }
 
 .menu__link:hover {
@@ -153,7 +155,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
 }
-.main-title{
+.title{
     margin: 4rem;
     font-weight: bold;
     font-size: 3.7rem;
@@ -162,15 +164,15 @@ img {
     color: #633;
     font-family: 'Dancing Script', cursive;
 }
-.product-new {
+.new-product{
     border: 1px solid #990;
     padding: .5rem;
     text-align: center;
-    /* height: 29rem; */
+    height: 29rem;
     position: relative;
 }
 
-.product-new:before {
+.new:before {
     content: "Nuevo";
     background: #fd0;
     padding: .5rem 0;
@@ -335,7 +337,7 @@ img {
         grid-gap: 1.5rem;
     }
 
-    .main-title{
+    .title{
         font-size: 4.6rem;
         color: #633;
     }
@@ -457,7 +459,8 @@ img {
     }
 
     .menu__link {
-        font-size: 5rem;
+        font-size: 3.9rem;
+        background: rgba(255, 255, 255, 0.9);
     }
 
     .container-submenu {
@@ -487,15 +490,15 @@ img {
         grid-gap: 1.5rem;
     }
 
-    .main-title{
-        font-size: 6.5rem;
+    .title{
+        font-size: 5.7rem;
         color: #633;
     }
 
-    /* .new-product {
+    .new-product {
         height: 39rem;
         
-    } */
+    }
 
     .new-product__img {
         width: 100%;
