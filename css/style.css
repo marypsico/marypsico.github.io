@@ -256,7 +256,7 @@ img {
     padding: 50;
     padding-bottom: 4rem;
     transition: all 0.5s;
-    text-shadow: .2rem .2rem .8rem #fff, .2rem .2rem 8rem #fff;
+    text-shadow: .2rem .2rem .8rem #fff, .2rem .2rem 8rem #fff,.2rem .2rem .8rem #fff, .2rem .2rem 8rem #fff;
 
 }
 
