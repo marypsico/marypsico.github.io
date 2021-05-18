@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <!-- styles -->
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="./css/slider.css" as="style">
@@ -24,6 +28,7 @@
     <link rel="stylesheet" href="./css/about.css" as="style">
     <link rel="preload" href="./css/blog.css" as="style">
     <link rel="stylesheet" href="./css/blog.css" as="style">
+    <link rel="icon" type="image/png" href="img/logo.png">
     <title>Viverdel</title>
 </head>
 
@@ -45,12 +50,14 @@
                     <li class="menu__item"><a href="#" class="menu__link"
                             onclick="changeRoute('inicio.html'); toggleMenu()">Inicio</a></li>
                     <li class="menu__item">
-                        <a href="#"onclick="changeRoute('about.html'); toggleMenu();" class="menu__link">Acerca de</a></li>
+                        <a href="#" onclick="changeRoute('about.html'); toggleMenu();" class="menu__link">Acerca de</a>
+                    </li>
                     <li class="menu__item container-submenu">
                         <a href="#" class="menu__link submenu-btn">Productos <i class="fas fa-sort-down"></i></a>
                         <ul class="submenu">
                             <li class="menu__item container-submenu">
-                                <a href="#" class="menu__link" onclick="changeRoute('higiene.html'); toggleMenu();">Higiene</a>
+                                <a href="#" class="menu__link"
+                                    onclick="changeRoute('higiene.html'); toggleMenu();">Higiene</a>
                                 <!-- <ul class="submenu">
                                     <li class="menu__item"><a href="#" class="menu__link">Rostro</a></li>
                                     <li class="menu__item"><a href="#" class="menu__link">Cabello</a></li>
@@ -58,13 +65,15 @@
                                 </ul> -->
                             </li>
                             <li class="menu__item">
-                                <a href="#" onclick="changeRoute('psustentables.html'); toggleMenu();" class="menu__link">Productos
+                                <a href="#" onclick="changeRoute('psustentables.html'); toggleMenu();"
+                                    class="menu__link">Productos
                                     sustentables</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="menu__item"><a href="" class="menu__link">Contacto</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link" class="menu__link" onclick="changeRoute('blog.html'); toggleMenu();"r3.,f>Blog</a></li>
+                    <li class="menu__item"><a href="#" onclick="changeRoute('contact.html'); toggleMenu();" class="menu__link">Contacto</a></li>
+                    <li class="menu__item"><a href="#" onclick="changeRoute('blog.html'); toggleMenu();" class="menu__link" 
+                            >Blog</a></li>
 
                 </ul>
 

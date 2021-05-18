@@ -12,9 +12,17 @@ body {
 
 body {
     margin: 0;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Newsreader', serif;
 }
-/*Estilos header*/
+
+/*----------Global clases----------*/
+    .flex-row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+/*---------------Estilos header------------*/
 header {
     margin: 1.5rem 1.7rem;
 }
@@ -40,7 +48,9 @@ img {
     justify-content: space-between;
     align-items: center;
 }
-/*menu responsiv*/
+/*-------X--------Estilos header-----X-------*/
+
+/*--------------menu responsiv----------------*/
 .icon-menu {
     font-size: 2.5rem;
     display: block;
@@ -75,6 +85,7 @@ img {
 .main {
     padding: 0 2rem;
 }
+/*-------x-------menu responsiv--------x--------*/
 
 /*Estilos del menú*/
 
@@ -298,6 +309,10 @@ img {
 .footer__txt-link {
     text-decoration: none;
     color: #999900;
+}
+.contact{
+    margin: 2rem;
+    font-weight: bold;
 }
 
 /*Estilos para tablet*/
@@ -562,4 +577,5 @@ img {
     .footer__txt{
         font-size: 3rem;
     }
+  
 }
